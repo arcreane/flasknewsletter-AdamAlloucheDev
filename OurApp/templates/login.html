@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logged in</title>
+</head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarToggle">
+                        <div class="navbar-nav mr-auto">
+                            <a class="nav-item nav-link text-decoration-none" href="{{url_for('usersList')}}">Liste des utilisateurs</a>
+                            <a class="nav-item nav-link text-decoration-none" href="{{url_for('categories')}}">Liste des categories</a>
+                            <a class="nav-item nav-link text-decoration-none" href="{{url_for('usersList')}}">deconexion</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+    </body>
+</html>

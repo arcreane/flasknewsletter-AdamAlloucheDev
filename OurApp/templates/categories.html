@@ -1,0 +1,16 @@
+<a href="{{url_for('login')}}"><h2>accueil</h2></a>
+
+<h1>Liste des catégories :</h1>
+
+<form method="post" action="{{ url_for('submit') }}">
+    {% for category in categories %}
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="{{ category.name }}" value="" id="{{ category.name }}">
+          <label class="form-check-label" for="{{ category.name }}">
+              {{ category.name }}
+          </label>
+        </div>
+    {% endfor %}
+    <br>
+    <input type="submit">
+</form>
